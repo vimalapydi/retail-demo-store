@@ -9,10 +9,10 @@
       <div class="row col-sm-12 col-md-12 col-lg-12 d-none d-sm-block">
         <ul class="nav nav-pills nav-fill mx-auto">
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name:'CategoryDetail', params: {id: 'featured'}}" v-bind:class="{ active: display == 'featured' }">Featured</router-link> 
+            <router-link class="nav-link" :to="{name:'CategoryDetail', params: {id: 'featured'}}" v-bind:class="{ active: display == 'featured' }">Featured</router-link>
           </li>
           <li class="nav-item" v-for="category in categories" v-bind:key=category.id>
-          <router-link class="nav-link" :to="{name:'CategoryDetail', params: {id: category.name}}" v-bind:class="{ active: display == category.name }">{{ category.name | capitalize }}</router-link> 
+          <router-link class="nav-link" :to="{name:'CategoryDetail', params: {id: category.name}}" v-bind:class="{ active: display == category.name }">{{ category.name | capitalize }}</router-link>
           </li>
         </ul>
       </div>
@@ -21,10 +21,10 @@
           Select Category
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <router-link class="dropdown-item" :to="{name:'CategoryDetail', params: {id: 'featured'}}" v-bind:class="{ active: display == 'featured' }">Featured</router-link> 
+          <router-link class="dropdown-item" :to="{name:'CategoryDetail', params: {id: 'featured'}}" v-bind:class="{ active: display == 'featured' }">Featured</router-link>
           <router-link class="dropdown-item" v-for="category in categories" v-bind:key="category" :to="{name:'CategoryDetail', params: {id: category.name}}" v-bind:class="{ active: display == category.name }">
             {{ category.name | capitalize }}
-          </router-link> 
+          </router-link>
         </div>
       </div>
     </div>
@@ -38,27 +38,27 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" v-bind:src="imageRootURL + 'apparel/2.jpg'" alt="First slide">
+          <img class="d-block w-100" v-bind:src="imageRootURL + 'octank/1.jpg'" alt="First slide">
             <div class="carousel-caption">
-              <h5>The Apparel Collection</h5>
-              <p>Cozy sweaters and classic styles for your wardrobe.</p>
-              <router-link class="btn btn-outline-light" :to="{name:'CategoryDetail', params: {id: 'apparel'}}">See More</router-link> 
+              <h5>Worlds largest roller coaster</h5>
+              <p>Please stop at conceirge to get the roller coaster map</p>
+              <router-link class="btn btn-outline-light" :to="{name:'CategoryDetail', params: {id: 'apparel'}}">See More</router-link>
             </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" v-bind:src="imageRootURL + 'outdoors/4.jpg'" alt="Second slide">
+          <img class="d-block w-100" v-bind:src="imageRootURL + 'octank/2.jpg'" alt="Second slide">
             <div class="carousel-caption">
-              <h5>Lets Go Fishing</h5>
-              <p>Start gearing up for summer adventures with our new fishing gear!</p>
-              <router-link class="btn btn-outline-light" :to="{name:'CategoryDetail', params: {id: 'outdoors'}}">See More</router-link> 
+              <h5>Fireworks through out the evening</h5>
+              <p>Watch the fireworks every hour in the evening!</p>
+              <router-link class="btn btn-outline-light" :to="{name:'CategoryDetail', params: {id: 'outdoors'}}">See More</router-link>
             </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" v-bind:src="imageRootURL + 'beauty/3.jpg'" alt="Third slide">
+          <img class="d-block w-100" v-bind:src="imageRootURL + 'octank/3.jpg'" alt="Third slide">
               <div class="carousel-caption">
-              <h5>Beauty Products</h5>
-              <p>Popular beauty products now back in stock.</p>
-              <router-link class="btn btn-outline-light" :to="{name:'CategoryDetail', params: {id: 'beauty'}}">See More</router-link> 
+              <h5>Wizard house</h5>
+              <p>Stroll through the wizard house to use your wand.</p>
+              <router-link class="btn btn-outline-light" :to="{name:'CategoryDetail', params: {id: 'beauty'}}">See More</router-link>
             </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
       </div>
       <div class="row">
         <div class="card-deck col-sm-12 col-md-12 col-lg-12 mt-4">
-          <Category v-for="category in categories" 
+          <Category v-for="category in categories"
             v-bind:key="category.id"
             :category="category"
           />
@@ -99,7 +99,7 @@
       </div>
       <div class="row">
         <div class="card-deck col-sm-12 col-md-12 col-lg-12 mt-4">
-          <Product v-for="recommendation in user_recommended" 
+          <Product v-for="recommendation in user_recommended"
             v-bind:key="recommendation.product.id"
             :product="recommendation.product"
             :experiment="recommendation.experiment"
@@ -115,7 +115,7 @@
       </div>
       <div class="row">
         <div class="card-deck col-sm-12 col-md-12 col-lg-12 mt-4">
-          <Product v-for="product in guest_recommended" 
+          <Product v-for="product in guest_recommended"
             v-bind:key="product.id"
             :product="product"
             :feature="feature"
@@ -123,7 +123,7 @@
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 </template>
 
 <script>
@@ -201,7 +201,7 @@ export default {
     }
   },
   computed: {
-    user() { 
+    user() {
       return AmplifyStore.state.user
     },
     imageRootURL() {

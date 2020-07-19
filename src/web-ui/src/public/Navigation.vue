@@ -14,15 +14,15 @@
         <ul class="navbar-nav mx-auto d-none d-md-block">
           <li class="nav-item text-dark">
             Free Shipping on All Orders over $100
-          </li>                  
-        </ul>   
+          </li>
+        </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <router-link class="text-dark pull-right mr-3" :to="{name:'Cart'}"><i class="fas fa-shopping-cart"></i></router-link> 
-            <router-link class="text-dark" :to="{name:'Help'}"><i class="fas fa-question-circle"></i></router-link> 
-          </li>  
-        </ul>                                    
-      </nav>  
+            <router-link class="text-dark pull-right mr-3" :to="{name:'Cart'}"><i class="fas fa-shopping-cart"></i></router-link>
+            <router-link class="text-dark" :to="{name:'Help'}"><i class="fas fa-question-circle"></i></router-link>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <!-- Navigation Bar-->
@@ -33,7 +33,7 @@
             <i class="fa fa-square fa-stack-2x"></i>
             <i class="fa fa-globe-americas fa-stack-1x fa-inverse"></i>
           </span>
-          &nbsp;Retail Demo Store  
+          &nbsp;Octank Parks  
         </router-link>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" v-if="!user" >
@@ -48,14 +48,14 @@
               <span class="dropdown-item-text small" v-if="user.first_name && user.last_name">{{ user.first_name }} {{ user.last_name }} ({{ user.username }})</span>
               <span class="dropdown-item-text small text-muted" v-if="user.persona">{{ user.persona }}</span>
               <div class="dropdown-divider" v-if="user.persona"></div>
-              <router-link class="dropdown-item" :to="{name:'Orders'}">Orders</router-link>  
-              <router-link class="dropdown-item" :to="{name:'Profile'}">Profile</router-link>  
+              <router-link class="dropdown-item" :to="{name:'Orders'}">Orders</router-link>
+              <router-link class="dropdown-item" :to="{name:'Profile'}">Profile</router-link>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#" v-on:click="signOut">Sign Out</a>
             </div>
-          </li>        
+          </li>
         </ul>
-      </nav>  
+      </nav>
     </div>
 
     <Search/>
@@ -98,7 +98,7 @@ export default {
     },
   },
   computed: {
-    user() { 
+    user() {
       return AmplifyStore.state.user
     }
   }
