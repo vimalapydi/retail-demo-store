@@ -13,7 +13,7 @@
         </ul>
         <ul class="navbar-nav mx-auto d-none d-md-block">
           <li class="nav-item text-dark">
-            Free Shipping on All Orders over $100
+            Welcome to Octank Parks!!
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -33,7 +33,7 @@
             <i class="fa fa-square fa-stack-2x"></i>
             <i class="fa fa-globe-americas fa-stack-1x fa-inverse"></i>
           </span>
-          &nbsp;Octank Parks  
+          &nbsp;Octank Parks
         </router-link>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" v-if="!user" >
