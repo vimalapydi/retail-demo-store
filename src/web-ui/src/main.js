@@ -5,7 +5,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router';
 import { Auth, Logger, Analytics, Interactions, AWSPinpointProvider, AmazonPersonalizeProvider } from 'aws-amplify';
-import { components } from 'aws-amplify-vue'; 
+import { components } from 'aws-amplify-vue';
 import moment from 'moment'
 import Amplitude from 'amplitude-js'
 
@@ -32,7 +32,7 @@ const amplifyConfig = {
   },
   Interactions: {
     bots: {
-      "RetailDemoStore": {
+      "OctankParks": {
         "name": process.env.VUE_APP_BOT_NAME,
         "alias": process.env.VUE_APP_BOT_ALIAS,
         "region": process.env.VUE_APP_BOT_REGION,
@@ -79,11 +79,11 @@ Auth.currentUserInfo()
   .then(user => logger.debug(user))
   .catch(err => logger.debug(err))
 
-new Vue({  
+new Vue({
   el: '#app',
   router: router,
   template: '<App/>',
-  components: { 
+  components: {
     App,
     ...components
   },

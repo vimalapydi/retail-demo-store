@@ -83,7 +83,7 @@ export default {
       this.checkingBackend = true
 
       try {
-        await Interactions.send(this.chatbotConfig.bot, 'Hey Retail Demo Store');
+        await Interactions.send(this.chatbotConfig.bot, 'Hey Octank Parks');
         this.backendConfigured = true
       }
       catch(err) {
@@ -101,7 +101,7 @@ export default {
       let config = {
         bot: process.env.VUE_APP_BOT_NAME,
         clearComplete: false,
-        botTitle: "Retail Demo Store Support",
+        botTitle: "Octank Parks",
         conversationModeOn: false,
         voiceEnabled: false,
         textEnabled: true
