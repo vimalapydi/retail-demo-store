@@ -1,17 +1,14 @@
-- id: 1
-  name: apparel
+- - id: 1
+  name: tickets
   image: 5.jpg
 - id: 2
-  name: footwear
+  name: expresspasses
   image: 5.jpg
 - id: 3
-  name: outdoors
+  name: deals
   image: 5.jpg
 - id:  4
-  name: electronics
-  image: 5.jpg
-- id: 5
-  name: beauty
+  name: annualpasses
   image: 5.jpg
 - id: 6
   name: jewelry

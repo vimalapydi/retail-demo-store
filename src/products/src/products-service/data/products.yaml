@@ -1,6 +1,6 @@
 - id: 1
   name: Black Leather Backpack
-  category: accessories
+  category: tickets
   style: bag
   description: Our handmade leather backpack will look great at the office or out on the town.
   price: 109.99
@@ -66,8 +66,7 @@
   image: "1.jpg"
 - id: 9
   name: Black Leather Shoulder Bag
-  category: accessories
-  style: bag
+  category: tickets
   description: Our handmade leather shoulder bag will look great at the office or out on the town.
   price: 109.99
   image: "2.jpg"
