@@ -26,28 +26,24 @@
 - id: 2
   name: Single Day Express Pass.
   category: expresspasses
-  style: shirt
   description: Express pass for Single Park Single Day Entry.
   price: 49.99
   image: "1.jpg"
 -id: 6
   name: Single Day Multiple Park Express Pass.
   category: expresspasses
-  style: shirt
   description: Express pass for Multiple Parks Single Day Entry.
   price: 99.99
   image: "2.jpg"
 -id: 10
   name: Multiple Day Single Park Express Pass.
   category: expresspasses
-  style: shirt
   description: Express pass for Single Park Single Day Entry.
   price: 99.99
   image: "3.jpg"
 -id: 14
   name: Mutiple Day Multiple Park Express Pass.
   category: expresspasses
-  style: shirt
   description: Express pass for Multiple Park Multiple Day Entry.
   price: 199.99
   image: "4.jpg"
@@ -72,9 +68,9 @@
   price: 49.99
   image: "3.jpg"
 - id: 15
-  name: Senior Discount
+  name: Season Discount
   category: promotions
-  description: Senior Discount for Single Park Single Day ticket.
+  description: Season Discount for Single Park Single Day ticket.
   price: 59.99
   image: "4.jpg"
   featured: true
@@ -97,9 +93,8 @@
   price: 3900.99
   image: "3.jpg"
 - id: 16
-  name: Annual Pass Off Peak
+  name: Off Peak Annual Pass
   category: annualpasses
-  style: shirt
   description: Multiple Park Entry Annual Pass after 4pm.
   price: 1809.99
   image: "4.jpg"
