@@ -11,8 +11,7 @@ import (
 func main() {
 	router := NewRouter()
 	http.Handle("/", xray.Handler(xray.NewFixedSegmentNamer("CartsService"), http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-
-		w.Write([]byte("Welcome to the Carts Web Service"!"))
+		w.Write([]byte("Welcome to the Carts Web Service!"))
 	})))
 	log.Fatal(http.ListenAndServe(":80", router))
 }
