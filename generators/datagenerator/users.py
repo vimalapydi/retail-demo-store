@@ -32,10 +32,10 @@ age_dist = truncnorm((age_min - age_mean) / age_sd, (age_max - age_mean) / age_s
 
 # Persona combinations ordered from strongest affinity to latent interest.
 personas = [
-    'apparel_housewares_accessories', 'housewares_apparel_electronics',
-    'footwear_outdoors_apparel', 'outdoors_footwear_housewares',
-    'electronics_beauty_outdoors', 'beauty_electronics_accessories',
-    'jewelry_accessories_beauty', 'accessories_jewelry_apparel'
+    'promotions_tickets_expresspasses', 'tickets_expresspasses_promotions',
+    'expresspasses_tickets_promotions', 'annualpasses_promotions_expresspasses',
+    'promotions_expresspasses_annualpasses', 'tickets_expresspasses_promotions',
+    'tickets_promotions_annualpasses', 'promotions_annualpasses_expresspasses'
 ]
 
 class UserPool:
@@ -56,7 +56,7 @@ class UserPool:
       self.last_id += 1
       user = User(str(self.last_id))
       self.users.append(user)
-  
+
   def user(self, select_active=False):
     if len(self.users) == 0:
       self.grow_pool(1000)
@@ -142,11 +142,11 @@ class User:
         "anonymous_id": str(uuid.uuid4()),
         "advertising_id": str(uuid.uuid4()),
         "user_agent": android_token,
-        "version": android_identifiers[1] 
+        "version": android_identifiers[1]
       },
       "web": {
         "anonymous_id": str(uuid.uuid4()),
-        "user_agent": fake.user_agent() 
+        "user_agent": fake.user_agent()
       }
     }
 
@@ -163,12 +163,12 @@ class User:
         'default': True
       }
     ]
-    
+
   def set_traits(self, traits):
     if traits != None:
       for (k,v) in traits.items():
         self.traits[k] = random.choice(v)
-  
+
   def get_platform_data(self, platform):
     return self.platforms[platform]
 
@@ -182,5 +182,5 @@ class User:
   def from_file(cls, user_dict):
     user = cls()
     for (k,v) in user_dict.items():
-      setattr(user,k, v)  # Danger, Will Robinson 
+      setattr(user,k, v)  # Danger, Will Robinson
     return user
