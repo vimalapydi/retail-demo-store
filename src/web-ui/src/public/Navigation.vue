@@ -13,7 +13,7 @@
         </ul>
         <ul class="navbar-nav mx-auto d-none d-md-block">
           <li class="nav-item text-dark">
-            Welcome to Octank Parks!!
+            Welcome to Octank Parks!
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
