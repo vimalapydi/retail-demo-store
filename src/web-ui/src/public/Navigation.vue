@@ -13,7 +13,7 @@
         </ul>
         <ul class="navbar-nav mx-auto d-none d-md-block">
           <li class="nav-item text-dark">
-            Welcome to Octaversal Parks v2!
+            Welcome to Octaversal Parks Demo-v1!
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
