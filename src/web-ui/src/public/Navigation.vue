@@ -13,7 +13,7 @@
         </ul>
         <ul class="navbar-nav mx-auto d-none d-md-block">
           <li class="nav-item text-dark">
-            Welcome to Octaversal Parks!
+            Welcome to Octaversal Parks- VP Demo 2020!
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
