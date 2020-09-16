@@ -29,7 +29,6 @@ func CartIndex(w http.ResponseWriter, r *http.Request) {
 		panic(err)
 	}
 }
-
 // CartShowByID Handler
 func CartShowByID(w http.ResponseWriter, r *http.Request) {
 	enableCors(&w)
